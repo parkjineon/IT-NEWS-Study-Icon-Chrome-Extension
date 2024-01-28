@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
-    "name" : "IT NEWS Study Icon Extension",
+    "name" : "IT NEWS Study Icon Extension!",
     "description": "Synchronize notion icon",
     "version" : "1.0",
     "action" : {
-        "default_popup" : "IT NEWS Study Icon.html",
-        "default_icon" : "extension.png"
+        "default_popup" : "./popup/popup.html",
+        "default_icon" : "./images/extension.png"
 
     }
 }

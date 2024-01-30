@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "chrome-types": "^0.1.254"
+    "axios": "^1.6.7",
+    "cheerio": "^1.0.0-rc.12",
+    "chrome-types": "^0.1.254",
+    "iconv-lite": "^0.6.3"
   }
 }

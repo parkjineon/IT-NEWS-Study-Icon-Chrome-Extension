@@ -1,10 +1,6 @@
-
-
-
-window.onload = function(){
     setTimeout(()=>{
+        console.log('지금')
         const a = document.querySelectorAll('.notion-selectable.notion-page-block.notion-collection-item');
-        let img = []
         let red = 0;
         let orange = 0;
         let yellow = 0;
@@ -39,6 +35,7 @@ window.onload = function(){
         }
         
         const board = document.createElement('div');
+        board.className = "CEBoard"
         const pRed = document.createElement('p');
         pRed.textContent = `❤️ ${red}개`
         const pOrange = document.createElement('p');
@@ -56,10 +53,7 @@ window.onload = function(){
         const pBlack = document.createElement('p');
         pBlack.textContent = `🖤 ${black}개`
 
-        
-        board.style.display = 'flex';
-        board.style.justifyContent = "center";
-        board.style.gap = "15px";
+
         board.appendChild(pRed);
         board.appendChild(pOrange);
         board.appendChild(pYellow);
@@ -72,6 +66,12 @@ window.onload = function(){
         const temp = document.querySelectorAll('div[contenteditable=false]');
         temp[1].insertAdjacentElement('afterend',board);
 
+
+        const blocks = document.querySelectorAll('.notion-page-block a');
+        console.log(blocks);
+
+        // const btn = document.querySelectorAll('.pseudoSelection .notion-record-icon[role=button]')[0];
+        // console.log(btn);
 
         // const span = document.querySelectorAll('div[role=row] [role=button] span')
         // const num = span[1].textContent.split(',')
@@ -96,5 +96,3 @@ window.onload = function(){
         // }
 
     },3000)
-}
-

@@ -15,7 +15,9 @@
     "permissions" : [
         "activeTab",
         "webRequest",
-        "scripting"
+        "scripting",
+        "webNavigation",
+        "history"
     ],
     "host_permissions":[
         "*://*.notion.so/*"

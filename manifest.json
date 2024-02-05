@@ -22,16 +22,6 @@
     "host_permissions":[
         "*://*.notion.so/*"
     ],
-    "content_scripts": [
-        {
-        "js": ["scripts/content.js"],
-        "matches": [
-            "https://www.notion.so/32d985e76cad4e1f96b101285e6500b2?*"
-        ],
-        "run_at": "document_idle",
-        "css":["scripts/content.css"]
-        }
-    ],
     "action" : {
         "default_popup" :"popup/popup.html" 
     }

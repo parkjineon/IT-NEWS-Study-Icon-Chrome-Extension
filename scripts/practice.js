@@ -1,1 +1,0 @@
-console.log('practice.js 실행 중')

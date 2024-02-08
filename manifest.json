@@ -17,7 +17,8 @@
         "webRequest",
         "scripting",
         "webNavigation",
-        "history"
+        "history",
+        "tabs"
     ],
     "host_permissions":[
         "*://*.notion.so/*"

@@ -23,6 +23,13 @@
     "host_permissions":[
         "*://*.notion.so/*"
     ],
+    "content_scripts":[
+        {
+            "matches":["https://www.notion.so/32d985e76cad4e1f96b101285e6500b2?v=460dc7543d1a4b4194e22d5460662666"],
+            "css" : ["scripts/content.css"],
+            "js" : ["scripts/content.js"]
+        }
+    ],
     "action" : {
         "default_popup" :"popup/popup.html" 
     }
